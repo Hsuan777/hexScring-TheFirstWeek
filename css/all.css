@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  width: 1920px;
+  margin: 0 auto;
+  font-size: 24px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Noto Sans TC", medium;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #415165;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #A00404;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 90px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-primary {
+  background-color: #415165;
+}
+
+.text-primary {
+  color: #415165;
+}
+
+.bg-secondary {
+  background-color: #96A9C4;
+}
+
+.text-secondary {
+  color: #96A9C4;
+}
+
+.bg-accent {
+  background-color: #A00404;
+}
+
+.text-accent {
+  color: #A00404;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.border-left {
+  border-left: 1px solid white;
+}
+
+.header {
+  margin-top: 48px;
+}
+
+.header__img {
+  margin: 48px 0;
+}
+
+.contentItem {
+  margin-bottom: 72px;
+}
+
+.contentItem__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentItem__head__title {
+  line-height: 45px;
+  margin-right: 16px;
+}
+
+.contentItem__body {
+  line-height: 36px;
+}
+
+.contentItem__body__highlights {
+  position: relative;
+  padding-left: 48px;
+}
+
+.contentItem__body__highlights::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  background-color: #96A9C4;
+  border-radius: 50%;
+}
+
+.contentItem__body__text {
+  padding-left: 24px;
+}
+
+.contentItem__customSpaceings {
+  padding: 24px 102px 56px 102px;
+}
+
+.contentItem__customSpaceings hr {
+  margin-bottom: 48px;
+}
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.footer__text {
+  margin-bottom: 16px;
+  line-height: 33px;
+}
+
+.footer__icon {
+  margin-right: 16px;
+}
+/*# sourceMappingURL=all.css.map */

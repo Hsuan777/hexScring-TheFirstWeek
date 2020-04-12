@@ -1,0 +1,39 @@
+// 基礎標籤設定
+* {
+  box-sizing: border-box; 
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;      
+}
+
+body{
+  width: $body__width;
+  margin: 0 auto;
+  font-size: $body__font-size;
+  background-color: $body__background-color;
+  color: $body__color;
+  font-family:  $body__font-family;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+a{
+  color:  map-get($color, primary);
+  text-decoration: none;
+  &:hover{
+    color: map-get($color, accent);
+  }
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 90px;
+  
+}
+
+h2 {
+  font-size: 32px;
+}
+

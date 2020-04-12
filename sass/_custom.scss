@@ -1,0 +1,88 @@
+
+// 通用類
+.container{
+    width: 1200px;
+    margin: 0 auto;
+  }
+@each $color, $value in ($color){
+  .bg-#{$color}{
+    background-color: $value;
+  }
+  .text-#{$color}{
+    color: $value;
+  }
+}
+.text-center{
+  text-align: center;
+}
+.d-flex{
+  display: flex;
+}
+.justify-content--center{
+  justify-content: center;
+}
+.border-left{
+  border-left: 1px solid white;
+}
+
+
+// layout
+.header{
+  margin-top: 48px;
+  &__img{
+    margin: 48px 0;
+  }
+}
+
+.contentItem{
+  margin-bottom: 72px;
+  &__head{
+    display: flex;
+    align-items: center;
+    &__title{
+      line-height:45px;
+      margin-right: 16px;
+    }
+  }
+  &__body{
+    line-height: 36px;
+    &__highlights{
+      position: relative;
+      padding-left: 48px;
+      &::before{
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: 16px;
+        width: 16px;
+        height: 16px;
+        background-color: map-get($color, secondary);
+        border-radius: 50%;
+      }
+    }
+    &__text{
+      padding-left: 24px;
+    }
+  }
+  &__customSpaceings{
+    padding: 24px 102px 56px 102px;
+    hr{
+      margin-bottom: 48px;
+    }
+  }
+  
+}
+.footer{
+  padding-top: 24px;
+  padding-bottom: 48px;
+  &__text{
+    margin-bottom: 16px;
+    line-height:33px;
+  }
+  &__icon{
+    margin-right: 16px;
+  }
+}
+
+
+
