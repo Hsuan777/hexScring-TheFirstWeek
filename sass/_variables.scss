@@ -1,18 +1,23 @@
 
-// 加入文字大小
-// 參考 Bootstrap4
+@font-face {
+  font-family: 'Andale Mono';
+  src: 
+  local("Andale Mono"),
+  url('../fonts/AndaleMono.ttf') ,
+}
 
-// 加入色彩變數，但只適合變數使用
+
+
 $color: (
-  primary: #415165,
-  secondary: #96A9C4,
-  accent: #A00404,
-  white: #ffffff
+  primary:  #415165,
+  secondary:#96A9C4,
+  third:    #A00404,
+  white:    #ffffff
 );
 
 $body__width: 1920px;
 $body__font-size:24px;
-$body__font-family:'Noto Sans TC', medium;;
+$body__font-family:-apple-system, 'Microsoft JhengHei',"Segoe UI", sans-serif ;
 $body__color:#000000;
 $body__background-color:#ffffff;
 
