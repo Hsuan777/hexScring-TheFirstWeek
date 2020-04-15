@@ -44,6 +44,10 @@
 .font-light{
   font-weight: 500;
 }
+.text-description{
+  font-size: 20px;
+  line-height: 30px;
+}
 
 
 // layout
@@ -56,7 +60,6 @@
   &__img{
     margin: 48px 0;
   }
-  
 }
 
 .contentItem{
@@ -78,13 +81,15 @@
   &__body{
     line-height: 36px;
     padding-left: 24px;
-    li + li{
-      margin-top: 32px;
-    } 
-    
-    img{
+    &__text{
+      padding-left: 24px;
+    }
+    &__img{
       margin: 8px 0;
     }
+    &__item + .contentItem__body__item{
+      margin-top: 32px;
+    } 
     &__mark{
       position: relative;
       &::before{
@@ -109,32 +114,17 @@
         }
       }
     }
-    &__text{
-      padding-left: 24px;
-    }
-    &__primary{
-      margin-bottom: 24px;
-    }
-
   }
 }
 
 .footer{
   padding-top: 24px;
   padding-bottom: 48px;
-  .contentItem__body{
-    li + li{
+  .contentItem__body__item + .contentItem__body__item{
       margin-top: 16px;
     } 
-  }
-  
-  &__icon{
-    a{
-      margin-right: 16px;
-    }
-    img{
-      margin: 0;
-    }
+  &__img{
+    margin-right: 16px;
   }
 }
 
@@ -156,24 +146,23 @@
       transform: translateY(-50%);
     }
   }
+  &__profile{
+    .contentItem__body__item + .contentItem__body__item{
+      margin-top: 24px;
+    }
+  }
   &__skill{
     padding: 24px 102px 56px 102px;
     .contentItem__head{
       margin-bottom: 40px;
     }
-    hr{
-      margin-bottom: 40px;
-    }
-    li + li{
+    .contentItem__body__item + .contentItem__body__item{
       margin-top: 16px;
     }
   }
   &__workExperience{
     .contentItem__head{
       margin-bottom: 22px;
-    }
-    p{
-      line-height:30px;
     }
   }
 }
