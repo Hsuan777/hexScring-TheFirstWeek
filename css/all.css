@@ -69,7 +69,7 @@ body {
   font-size: 24px;
   background-color: #ffffff;
   color: #000000;
-  font-family: -apple-system, "Roboto", "Microsoft JhengHei", sans-serif;
+  font-family: -apple-system, "Microsoft JhengHei", "Roboto", sans-serif;
 }
 
 img {
@@ -204,14 +204,17 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 32px;
+  line-height: 45px;
   padding-bottom: 8px;
   margin-bottom: 16px;
 }
 
-.contentItem__head__title {
-  line-height: 45px;
-  margin-right: 16px;
+.contentItem__head__span {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Roboto";
 }
 
 .contentItem__body {
